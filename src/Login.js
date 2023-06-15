@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 export default function Login() {
   return (
-    <div className="flex w-1/1 ">
-      <div className="flex h-screen w-1/3	flex-1 flex-col justify-center items-center px-6 py-12 lg:px-8">
+    <div className="flex w-1/1 lg:h-100%">
+      <div className="flex tall:h-100% taller:h-screen w-1/3 flex-1 flex-col justify-center items-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <img
             className="mx-auto h-10 w-auto"
@@ -93,7 +93,7 @@ export default function Login() {
           </p>
         </div>
       </div>
-      <img src={"https://res.cloudinary.com/dmo7nzytn/image/upload/v1685073311/terraces-7878191_yxraeh_1_1_1_ccvkgg.png"} className=" h-screen w-2/3"/>
+      <img src={"https://res.cloudinary.com/dmo7nzytn/image/upload/v1685073311/terraces-7878191_yxraeh_1_1_1_ccvkgg.png"} className="hidden lg:block lg:h-100% w-2/3"/>
     </div>
   );
 }

@@ -4,6 +4,7 @@ import SignUp from './SignUp';
 import Feed from './Feed';
 import Teste from './Teste';
 import TopBar from './TopBar';
+import Plans from './Plans';
 import Home from './Home';
 
 export default function App (){
@@ -15,6 +16,7 @@ export default function App (){
           <Route path="/sign-in" element={<Login />}/>
           <Route path="/sign-up" element={<SignUp />}/>
           <Route path="/feed" element={<Teste />}/>
+          <Route path="/plans" element={<Plans />}/>
         </Routes>
       </BrowserRouter>
     </>

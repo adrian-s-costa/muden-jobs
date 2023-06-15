@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 export default function SignUp() {
   return (
-    <div className="flex w-1/1 ">
-      <div className="flex h-screen w-1/3	flex-1 flex-col justify-center items-center px-6 py-12 lg:px-8">
+    <div className="flex w-1/1 lg:h-100%">
+      <div className="flex w-1/3 flex-1 tall:h-100% taller:h-screen flex-col justify-center items-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <img
             className="mx-auto h-10 w-auto"
@@ -15,7 +15,7 @@ export default function SignUp() {
           </h2>
         </div>
 
-        <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+        <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm lg:h-100%">
           <form className="space-y-6" action="#" method="POST">
             <div>
               <label htmlFor="nome" className="block text-sm font-medium leading-6 text-gray-900">
@@ -100,7 +100,7 @@ export default function SignUp() {
 
             <div>
               <button
-                class="justify-center flex w-full rounded-md px-3 py-1.5 text-sm font-semibold leading-6 border gap-2  border-slate-200 text-slate-700 hover:border-slate-400 hover:text-slate-900 hover:shadow transition duration-150">
+                className="justify-center flex w-full rounded-md px-3 py-1.5 text-sm font-semibold leading-6 border gap-2  border-slate-200 text-slate-700 hover:border-slate-400 hover:text-slate-900 hover:shadow transition duration-150">
                 <img class="w-6 h-6" src="https://www.svgrepo.com/show/475656/google-color.svg" loading="lazy" alt="google logo"/>
                 <span>Crie a conta com o Google</span>
               </button>
@@ -108,7 +108,7 @@ export default function SignUp() {
             
             <div>
               <button type="button" class="justify-center flex w-full rounded-md px-3 py-1.5 text-sm font-semibold leading-6 border gap-2 text-white bg-[#3b5998] hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 text-center items-center dark:focus:ring-[#3b5998]/55 mr-2 mb-2">
-                <svg class="w-4 h-4 mr-2 -ml-1" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M279.1 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.4 0 225.4 0c-73.22 0-121.1 44.38-121.1 124.7v70.62H22.89V288h81.39v224h100.2V288z"></path></svg>
+                <svg className="w-4 h-4 mr-2 -ml-1" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M279.1 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.4 0 225.4 0c-73.22 0-121.1 44.38-121.1 124.7v70.62H22.89V288h81.39v224h100.2V288z"></path></svg>
                 Crie conta com Facebook
               </button>
             </div>
@@ -125,7 +125,7 @@ export default function SignUp() {
           </p>
         </div>
       </div>
-      <img src={"https://res.cloudinary.com/dmo7nzytn/image/upload/v1685119021/montain_dnobor.png"} className=" h-screen w-2/3"/>
+      <img className="hidden lg:h-100% lg:w-2/3 lg:block" src={"https://res.cloudinary.com/dmo7nzytn/image/upload/v1685119021/montain_dnobor.png"} />
     </div>
   );
 }

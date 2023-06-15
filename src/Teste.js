@@ -1,7 +1,6 @@
 import { useState } from "react"
 import TopBar from "./TopBar";
 import Skeleton from "./Skeleton";
-import Sidebar from "./Sidebar";
 import Post from "./Post";
 
 export default function Teste() {
@@ -19,7 +18,7 @@ export default function Teste() {
     <>
     <TopBar/>
 
-    <form>
+    <form onSubmit={()=>{  }}>
       <div className="mb-4 mt-4 flex justify-center">
         <div className="border w-[90%] md:w-[42rem] lg:w-[42rem] rounded-lg">
           <div class="py-2 px-4 bg-white rounded-t-lg dark:bg-gray-800 lg:w-[41.9rem] md:w-[42rem]">
@@ -46,6 +45,10 @@ export default function Teste() {
       </div>
     </form>
 
+    <asside className="hidden lg:block lg:w-[250px] lg:border-gray lg:border lg:rounded-lg lg:fixed lg:top-[80px] lg:left-[450px] lg:h-[500px]">
+      
+    </asside>
+
     <div className={`${ animation }`}>
       <Post hidden={ hidden }></Post>
       <Post hidden={ hidden }></Post>
@@ -64,9 +67,9 @@ export default function Teste() {
       <Skeleton show={show} setShow={setShow}/>
     </div>
 
-    <div className=" hidden lg:block lg:w-[250px] lg:border-gray lg:border lg:rounded-lg lg:absolute lg:top-[80px] lg:left-[350px] lg:h-[500px]"></div>
 
-    <div className={ ` flex-col w-1/1 items-center py-10 hidden` }>
+
+    <div className={ `flex-col w-1/1 items-center py-10 hidden` }>
       <form className="flex flex-col w-1.7/3">
         <div className="space-y-12">
           <div className="border-b border-gray-900/10 pb-12">
@@ -135,7 +138,7 @@ export default function Teste() {
                     <div className="mt-4 flex text-sm leading-6 text-gray-600">
                       <label
                         htmlFor="file-upload"
-                        className="relative cursor-pointer rounded-md bg-white font-semibold text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500"
+                        className=" cursor-pointer rounded-md bg-white font-semibold text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500"
                       >
                         <span>Upload a file</span>
                         <input id="file-upload" name="file-upload" type="file" className="sr-only" />
