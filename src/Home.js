@@ -125,7 +125,7 @@ export default function Home() {
               >
                 Cadastre-se como talento
               </a>
-              <a href="#read-more" className="text-sm font-semibold leading-6 text-gray-900">
+              <a href="/feed" className="text-sm font-semibold leading-6 text-gray-900">
                 Contratar talento <span aria-hidden="true">→</span>
               </a>
             </div>  

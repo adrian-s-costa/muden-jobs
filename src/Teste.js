@@ -45,8 +45,8 @@ export default function Teste() {
       </div>
     </form>
 
-    <asside className="hidden lg:block lg:w-[250px] lg:border-gray lg:border lg:rounded-lg lg:fixed lg:top-[80px] lg:left-[450px] lg:h-[500px]">
-      
+    <asside className="hidden lg:block lg:w-[250px] lg:border-gray lg:border lg:rounded-lg lg:fixed lg:top-[80px] lg:left-[350px] lg:h-[500px]">
+
     </asside>
 
     <div className={`${ animation }`}>
