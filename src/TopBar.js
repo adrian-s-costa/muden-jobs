@@ -15,7 +15,7 @@ function classNames(...classes) {
 
 export default function TopBar() {
   return (
-    <Disclosure as="nav" className="bg-white border-b z-10">
+    <Disclosure as="nav" className="bg-white z-10 fixed w-full shadow">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
